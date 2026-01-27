@@ -5,24 +5,40 @@
 
 <head profile="http://dublincore.org/documents/dcmi-terms/">
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
-    <title>IB Biology IA - Yeast Fermentation</title>
+    <title>Investigation into the Effect of Sodium Chloride Concentration on the Fermentation Rate of Saccharomyces
+        cerevisiae</title>
     <style>
         body {
             font-family: 'Times New Roman', Times, serif;
             margin: 2.54cm;
             max-width: 21cm;
+            line-height: 1.5;
+            font-size: 12pt;
+            color: #000;
         }
 
-        h1,
-        h2,
+        h1 {
+            text-align: center;
+            font-size: 16pt;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: 14pt;
+            margin-top: 24px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
         h3 {
-            color: #2E2E2E;
+            font-size: 13pt;
+            margin-top: 18px;
+            font-style: italic;
         }
 
         p {
             text-align: justify;
-            line-height: 1.5;
-            font-size: 12pt;
+            margin-bottom: 12px;
         }
 
         table {
@@ -30,6 +46,7 @@
             border-collapse: collapse;
             margin: 20px 0;
             font-size: 11pt;
+            page-break-inside: avoid;
         }
 
         th,
@@ -48,7 +65,7 @@
         .caption {
             font-style: italic;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
             font-size: 10pt;
         }
 
@@ -57,139 +74,145 @@
             height: auto;
             display: block;
             margin: 20px auto;
-            border: 1px solid #ccc;
         }
 
-        .highlight {
-            background-color: #ffffcc;
+        ul,
+        ol {
+            margin-bottom: 12px;
+        }
+
+        li {
+            margin-bottom: 6px;
         }
     </style>
 </head>
 
 <body dir="ltr">
 
-    <h3>RQ: To what extent does increasing NaCl concentration (0%, 1%, 2%, 3%, 4%) affect the fermentation rate of yeast
-        (<i>Saccharomyces cerevisiae</i>), as measured by the volume of carbon dioxide produced?</h3>
+    <h1>Investigation into the Effect of Sodium Chloride Concentration on the Fermentation Rate of <i>Saccharomyces
+            cerevisiae</i></h1>
+
+    <h2>1. Introduction</h2>
+    <p>Fermentation is an essential biological process where organisms convert carbohydrates into energy in the absence
+        of oxygen. Understanding the environmental factors that influence fermentation is crucial not only for
+        biological theory but also for industrial applications such as baking, brewing, and biofuel production. This
+        investigation focuses on the effect of salinity on the metabolic activity of yeast.</p>
+
+    <h3>Research Question</h3>
+    <p><b>To what extent does increasing the concentration of sodium chloride (0.0%, 1.0%, 2.0%, 3.0%, 4.0% w/v) affect
+            the rate of fermentation in <i>Saccharomyces cerevisiae</i>, as measured by the volume of carbon dioxide
+            displaced (&#177;0.5 cm<sup>3</sup>) over a 10-minute period at 45&#176;C?</b></p>
 
     <h3>Background Information</h3>
-    <p>Fermentation is an anaerobic metabolic process used by yeast (<i>Saccharomyces cerevisiae</i>) to generate ATP
-        when oxygen is scarce. In this pathway, glucose undergoes glycolysis to form pyruvate, which is subsequently
-        converted into ethanol and carbon dioxide (CO<sub>2</sub>). This process is catalyzed by specific enzymes, such
-        as zymase. Consequently, the rate of fermentation is highly dependent on environmental factors that influence
-        enzyme kinetics, including temperature, pH, and substrate concentration.</p>
+    <p><i>Saccharomyces cerevisiae</i>, commonly known as baker's yeast, is a facultative anaerobe. When oxygen is
+        unavailable, it performs alcoholic fermentation, converting glucose ($C_6H_{12}O_6$) into ethanol ($2C_2H_5OH$),
+        carbon dioxide ($2CO_2$), and energy (ATP). The overall equation is:</p>
+    <p style="text-align: center;">$C_6H_{12}O_6 \xrightarrow{zymase} 2C_2H_5OH + 2CO_2 + 2ATP$</p>
 
-    <p>Sodium chloride (NaCl) influences yeast fermentation through two primary mechanisms: <b>osmotic stress</b> and
-        <b>specific ion toxicity</b>. Firstly, adding NaCl lowers the water potential ($\Psi$) of the external solution.
-        This creates a hypertonic environment, driving water out of the yeast cells via osmosis, which leads to a loss
-        of turgor pressure and potential plasmolysis (cell shrinkage). Secondly, high intracellular concentrations of
-        Na<sup>+</sup> and Cl<sup>-</sup> ions can function as toxic inhibitors. These ions can interfere with the
-        electrostatic interactions within enzyme structures, leading to conformational changes (denaturation) or
-        blocking active sites, thereby reducing the efficiency of glycolysis and fermentation. (Belz et al., 2017)
+    <p>The rate of this reaction is governed by enzymes such as zymase. Enzyme activity is sensitive to environmental
+        conditions including temperature, pH, and ion concentration. Sodium chloride (NaCl) introduces two main stress
+        factors: <b>osmotic stress</b> and <b>specific ion toxicity</b>.</p>
+
+    <p><b>Osmotic Stress:</b> The addition of NaCl lowers the solute potential ($\Psi_s$) and thus the total water
+        potential ($\Psi$) of the extracellular environment. If the external water potential drops below that of the
+        yeast cytoplasm, water moves out of the cell via osmosis. This loss of turgor pressure can lead to cell
+        shrinkage (plasmolysis), reducing the availability of free water required for metabolic hydrolysis reactions.
     </p>
 
+    <p><b>Specific Ion Toxicity:</b> High concentrations of sodium ($Na^+$) and chloride ($Cl^-$) ions can penetrate the
+        cell wall and plasma membrane. These ions can disrupt the ionic bonds and hydrogen bonds that maintain the
+        tertiary structure of enzymes. This denaturation alters the shape of the active site, preventing the substrate
+        (glucose) from binding, thereby inhibiting glycolysis and fermentation (Belz et al., 2017).</p>
+
     <h3>Hypotheses</h3>
-    <p><b>Research Hypothesis:</b> An increase in sodium chloride (NaCl) concentration will significantly decrease the
-        rate of fermentation in <i>Saccharomyces cerevisiae</i>, as measured by a reduction in carbon dioxide production
-        volume.</p>
-    <p><b>Null Hypothesis:</b> Changes in sodium chloride (NaCl) concentration will have no significant effect on the
-        fermentation rate of <i>Saccharomyces cerevisiae</i>.</p>
+    <ul>
+        <li><b>Research Hypothesis ($H_1$):</b> There will be a statistically significant decrease in the volume of
+            $CO_2$ produced as the concentration of NaCl increases. As salinity rises, osmotic stress and ion toxicity
+            will progressively inhibit enzyme activity.</li>
+        <li><b>Null Hypothesis ($H_0$):</b> There will be no statistically significant difference in the volume of
+            $CO_2$ produced across the different NaCl concentrations. Any observed differences will be due to random
+            chance.</li>
+    </ul>
 
-    <h3>Methodology Critiques &amp; Adjustments</h3>
-    <p><i>Note on Temperature:</i> The experiment was conducted at 45°C. While this facilitates a rapid reaction
-        initially, it is important to note that the optimal growth temperature for <i>S. cerevisiae</i> is typically
-        30–35°C. At 45°C, the yeast may experience heat stress in addition to osmotic stress, potentially accelerating
-        enzyme denaturation. Future iterations of this experiment should consider a lower controlled temperature (e.g.,
-        35°C) to isolate the variable of salinity.</p>
+    <h2>2. Methodology</h2>
 
-    <h3>Results</h3>
+    <h3>Variables</h3>
+    <ul>
+        <li><b>Independent Variable:</b> Concentration of Sodium Chloride (NaCl) in the yeast-sugar solution. Five
+            levels were tested: 0% (Control), 1%, 2%, 3%, and 4% (w/v).</li>
+        <li><b>Dependent Variable:</b> Volume of Carbon Dioxide ($CO_2$) produced (cm<sup>3</sup>), measured by water
+            displacement in a fermentation tube after 10 minutes.</li>
+        <li><b>Controlled Variables:</b>
+            <ul>
+                <li><b>Temperature (45&#176;C):</b> Maintained using a water bath. Temperature affects kinetic energy
+                    and enzyme stability. Keeping it constant ensures any rate change is due to salt, not thermal
+                    effects.</li>
+                <li><b>Yeast Concentration (17% v/v):</b> A standardized suspension was used to ensure the initial
+                    number of yeast cells was consistent across trials.</li>
+                <li><b>Substrate Concentration (2% w/v Sugar):</b> 2g of sugar was dissolved in the solution to ensure
+                    substrate availability was not a limiting factor.</li>
+                <li><b>Time (10 minutes):</b> The reaction time was fixed to allow comparable rates to be calculated.
+                </li>
+                <li><b>pH:</b> Distilled water (pH ~7) was used for all solutions to minimize pH variations affecting
+                    enzyme charge.</li>
+            </ul>
+        </li>
+    </ul>
 
-    <h4>Table 1: Effect of NaCl Concentration on CO<sub>2</sub> Production (5 Minutes)</h4>
-    <p><i>Raw data showing the volume of water displaced (cm<sup>3</sup>) after 5 minutes of fermentation.</i></p>
+    <h3>Apparatus</h3>
+    <ul>
+        <li>Yeast (<i>Saccharomyces cerevisiae</i>, lyophilized, Dr. Oetker, 7g packets)</li>
+        <li>Distilled water</li>
+        <li>Table sugar (Sucrose, Diamant)</li>
+        <li>Table salt (NaCl, O’sole)</li>
+        <li>Electronic Balance (Radwag, &#177;0.01g)</li>
+        <li>Water Bath (Laboplay, maintained at 45&#176;C)</li>
+        <li>Fermentation tubes (glass, graduated)</li>
+        <li>Beakers (100 cm<sup>3</sup>)</li>
+        <li>Glass stirring rod</li>
+        <li>Rubber tubing and stoppers (to connect reaction vessel to fermentation tube)</li>
+        <li>Stopwatch (&#177;0.01s)</li>
+    </ul>
+
+    <h3>Procedure</h3>
+    <ol>
+        <li><b>Preparation of Yeast Suspension:</b> A 17% (v/v) yeast suspension was prepared by mixing fresh yeast with
+            distilled water. This suspension was placed in a water bath at 45&#176;C for 5 minutes prior to use to
+            activate the yeast cells.</li>
+        <li><b>Preparation of Digestion Mixture:</b> For each trial, 2g of sugar was dissolved in 70 mL of distilled
+            water. The specific mass of NaCl required for the trial (0g, 0.7g, 1.4g, 2.1g, or 2.8g) was added to this
+            solution to create concentrations of 0%, 1%, 2%, 3%, and 4% (w/v) respectively.</li>
+        <li><b>Reaction Initiation:</b> 30 mL of the activated yeast suspension was added to the sugar-salt solution,
+            bringing the total volume to 100 mL.</li>
+        <li><b>Setup:</b> The mixture was immediately poured into a reaction vessel connected via a sealed tube to a
+            fermentation tube filled with water. The reaction vessel was placed into the 45&#176;C water bath.</li>
+        <li><b>Data Collection:</b> The stopwatch was started immediately. The volume of gas displaced in the
+            fermentation tube was recorded at 5-minute and 10-minute intervals.</li>
+        <li><b>Replication:</b> This procedure was repeated 5 times for each of the 5 concentrations (Total = 25 trials)
+            to ensure reliability and allow for statistical analysis.</li>
+    </ol>
+
+    <h3>Safety and Ethics</h3>
+    <ul>
+        <li><b>Safety:</b> Glassware was handled with care to prevent breakage. The water bath temperature (45&#176;C)
+            is hot but not scalding; however, caution was used. Standard lab coats and goggles were worn.</li>
+        <li><b>Ethical:</b> <i>Saccharomyces cerevisiae</i> is a fungus (yeast) and does not require ethical clearance
+            for experimentation. Waste solutions were disposed of down the sink with plenty of water as they are
+            non-toxic.</li>
+        <li><b>Environmental:</b> Minimal reagents were used. No hazardous chemicals were generated.</li>
+    </ul>
+
+    <h2>3. Data Analysis</h2>
+
+    <h3>Raw Data</h3>
+    <p>The following table presents the volume of $CO_2$ produced after 10 minutes for all trials.</p>
+
+    <h4>Table 1: Volume of Carbon Dioxide Produced (cm<sup>3</sup>) after 10 Minutes</h4>
     <table>
         <thead>
             <tr>
                 <th rowspan="2">NaCl Concentration<br />(%, w/v)</th>
-                <th colspan="5">Volume of CO<sub>2</sub> Produced (cm<sup>3</sup>) &#177; 0.5 cm<sup>3</sup></th>
-                <th rowspan="2">Mean Volume<br />(cm<sup>3</sup>)</th>
-                <th rowspan="2">Standard Deviation<br />(cm<sup>3</sup>)</th>
-            </tr>
-            <tr>
-                <th>Trial 1</th>
-                <th>Trial 2</th>
-                <th>Trial 3</th>
-                <th>Trial 4</th>
-                <th>Trial 5</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>0</td>
-                <td>4.0</td>
-                <td>3.9</td>
-                <td>4.3</td>
-                <td>4.1</td>
-                <td>4.2</td>
-                <td><b>4.10</b></td>
-                <td><b>0.16</b></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>3.2</td>
-                <td>3.0</td>
-                <td>3.8</td>
-                <td>2.9</td>
-                <td>3.1</td>
-                <td><b>3.20</b></td>
-                <td><b>0.35</b></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>2.4</td>
-                <td>2.7</td>
-                <td>2.4</td>
-                <td>2.1</td>
-                <td>2.2</td>
-                <td><b>2.36</b></td>
-                <td><b>0.23</b></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>1.6</td>
-                <td>1.6</td>
-                <td>1.4</td>
-                <td>1.8</td>
-                <td>1.4</td>
-                <td><b>1.56</b></td>
-                <td><b>0.17</b></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>1.0</td>
-                <td>0.8</td>
-                <td>1.2</td>
-                <td>0.8</td>
-                <td>1.0</td>
-                <td><b>0.96</b></td>
-                <td><b>0.17</b></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <img src="yeast_fermentation_5min.png" alt="Graph showing effect of NaCl on fermentation at 5 minutes" />
-    <div class="caption">Figure 1: Mean volume of CO<sub>2</sub> produced after 5 minutes at varying NaCl
-        concentrations. Error bars represent standard deviation (+/- 1 SD).</div>
-
-    <br />
-
-    <h4>Table 2: Effect of NaCl Concentration on CO<sub>2</sub> Production (10 Minutes)</h4>
-    <p><i>Raw data showing the volume of water displaced (cm<sup>3</sup>) after 10 minutes of fermentation.</i></p>
-    <table>
-        <thead>
-            <tr>
-                <th rowspan="2">NaCl Concentration<br />(%, w/v)</th>
-                <th colspan="5">Volume of CO<sub>2</sub> Produced (cm<sup>3</sup>) &#177; 0.5 cm<sup>3</sup></th>
-                <th rowspan="2">Mean Volume<br />(cm<sup>3</sup>)</th>
-                <th rowspan="2">Standard Deviation<br />(cm<sup>3</sup>)</th>
+                <th colspan="5">Volume of $CO_2$ (cm<sup>3</sup>) &#177;0.5 cm<sup>3</sup></th>
             </tr>
             <tr>
                 <th>Trial 1</th>
@@ -207,8 +230,6 @@
                 <td>34.2</td>
                 <td>32.7</td>
                 <td>33.4</td>
-                <td><b>32.56</b></td>
-                <td><b>1.41</b></td>
             </tr>
             <tr>
                 <td>1</td>
@@ -217,8 +238,6 @@
                 <td>25.2</td>
                 <td>23.4</td>
                 <td>24.1</td>
-                <td><b>24.10</b></td>
-                <td><b>0.67</b></td>
             </tr>
             <tr>
                 <td>2</td>
@@ -227,8 +246,6 @@
                 <td>16.8</td>
                 <td>16.3</td>
                 <td>16.4</td>
-                <td><b>16.82</b></td>
-                <td><b>0.51</b></td>
             </tr>
             <tr>
                 <td>3</td>
@@ -237,8 +254,6 @@
                 <td>9.8</td>
                 <td>11.1</td>
                 <td>10.2</td>
-                <td><b>10.52</b></td>
-                <td><b>0.53</b></td>
             </tr>
             <tr>
                 <td>4</td>
@@ -247,15 +262,124 @@
                 <td>6.5</td>
                 <td>6.1</td>
                 <td>6.7</td>
-                <td><b>6.44</b></td>
-                <td><b>0.22</b></td>
             </tr>
         </tbody>
     </table>
 
-    <img src="yeast_fermentation_10min.png" alt="Graph showing effect of NaCl on fermentation at 10 minutes" />
-    <div class="caption">Figure 2: Mean volume of CO<sub>2</sub> produced after 10 minutes at varying NaCl
-        concentrations. Error bars represent standard deviation (+/- 1 SD).</div>
+    <h3>Processed Data</h3>
+    <p><b>Mean Calculation:</b> $\bar{x} = \frac{\sum x}{n}$</p>
+    <p><b>Standard Deviation ($s$):</b> Used to measure the spread of data around the mean.</p>
+
+    <h4>Table 2: Statistical Summary (10 Minutes)</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>NaCl Concentration (%)</th>
+                <th>Mean Volume (cm<sup>3</sup>)</th>
+                <th>Standard Deviation (cm<sup>3</sup>)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>32.56</td>
+                <td>1.41</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>24.10</td>
+                <td>0.67</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>16.82</td>
+                <td>0.51</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>10.52</td>
+                <td>0.53</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>6.44</td>
+                <td>0.22</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Graphical Representation</h3>
+    <img src="yeast_fermentation_10min.png" alt="Graph of Mean CO2 Production vs NaCl Concentration" />
+    <div class="caption">Figure 1: The effect of NaCl concentration on the mean volume of $CO_2$ produced. Error bars
+        represent &#177;1 Standard Deviation. A linear trendline shows the negative correlation.</div>
+
+    <h3>Statistical Testing (One-Way ANOVA)</h3>
+    <p>To determine if the differences between the means are statistically significant, a Single Factor Analysis of
+        Variance (ANOVA) was conducted.</p>
+    <ul>
+        <li><b>Null Hypothesis ($H_0$):</b> $\mu_{0\%} = \mu_{1\%} = \mu_{2\%} = \mu_{3\%} = \mu_{4\%}$</li>
+        <li><b>Alternative Hypothesis ($H_1$):</b> At least one group mean is different.</li>
+        <li><b>Significance Level ($\alpha$):</b> 0.05</li>
+    </ul>
+
+    <p><b>Results:</b></p>
+    <ul>
+        <li><b>F-statistic:</b> 898.98</li>
+        <li><b>P-value:</b> 1.15 &#215; 10<sup>-22</sup> (approx. 0)</li>
+    </ul>
+
+    <p><b>Conclusion of Test:</b> Since the p-value ($< 0.001$) is far less than the critical value ($\alpha=0.05$), we
+            strictly <b>reject the Null Hypothesis</b>. There is a statistically significant difference in fermentation
+            rates between the different salt concentrations.</p>
+
+    <h2>4. Evaluation and Conclusion</h2>
+
+    <h3>Conclusion</h3>
+    <p>The results provide strong evidence to support the research hypothesis. As the concentration of NaCl increased
+        from 0% to 4%, the mean volume of $CO_2$ produced decreased significantly from 32.56 cm<sup>3</sup> to 6.44
+        cm<sup>3</sup>. The regression analysis suggests a strong negative linear correlation. The ANOVA test confirms
+        that these differences are not due to random chance ($p < 0.05$).</p>
+            <p>Biologically, this can be explained by the hypertonic environment created by the salt. The increased
+                salinity reduced the water potential of the extracellular fluid, drawing water out of the yeast cells.
+                This dehydration likely inhibited enzyme function and metabolic pathways. Furthermore, the potential
+                influx of sodium ions may have competitively inhibited the active sites of glycolytic enzymes, further
+                reducing the rate of reaction.</p>
+
+            <h3>Evaluation of Methodology</h3>
+            <p><b>Strengths:</b>
+            <ul>
+                <li><b>Control of Variables:</b> The use of a water bath ensured temperature stability, and the same
+                    yeast batch was used for consistency.</li>
+                <li><b>Replication:</b> Five trials per concentration provided sufficient data to calculate standard
+                    deviation and perform an ANOVA, increasing the reliability of the findings. standard deviations were
+                    relatively low, indicating precise pipetting and measurement.</li>
+            </ul>
+    </p>
+
+    <p><b>Weaknesses and Limitations:</b>
+    <ul>
+        <li><b>Temperature Choice (45&#176;C):</b> The experiment was conducted at 45&#176;C, which is significantly
+            higher than the optimal fermentation temperature for <i>S. cerevisiae</i> (30-35&#176;C). At 45&#176;C,
+            thermal denaturation of enzymes may have begun to occur. This means the observed decrease in rate was likely
+            a driven by a <i>synergistic</i> effect of heat stress and salt stress, rather than salt alone.</li>
+        <li><b>Acclimatization:</b> The yeast was only activated for 5 minutes. A longer activation period (e.g., 15-20
+            mins) would ensure the yeast cultures were in the log phase of growth before the experiment began.</li>
+        <li><b>Gas Solubility:</b> $CO_2$ is slightly soluble in water. The initial gas produced would have dissolved in
+            the water in the fermentation tube rather than displacing it, leading to a systematic error where the true
+            fermentation rate is underestimated.</li>
+    </ul>
+    </p>
+
+    <h3>Extensions</h3>
+    <p>Future investigations could explore:</p>
+    <ul>
+        <li><b>Temperature Interaction:</b> Repeating the experiment at optimal temperature (35&#176;C) to isolate the
+            osmotic effect.</li>
+        <li><b>Reversibility:</b> Washing the yeast cells after salt exposure and placing them in fresh sugar solution
+            to see if the inhibition is reversible (osmotic) or permanent (toxicity/death).</li>
+        <li><b>Different Salts:</b> Comparing KCl vs NaCl to determine if the toxicity is due to the chloride ion or the
+            cation size.</li>
+    </ul>
 
 </body>
 
