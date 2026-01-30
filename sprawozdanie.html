@@ -152,6 +152,29 @@
             page-break-after: always;
         }
 
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 4mm;
+                max-width: 100%;
+            }
+
+            h1 {
+                font-size: 16pt;
+            }
+
+            h2 {
+                font-size: 12pt;
+            }
+
+            .two-column {
+                flex-direction: column;
+            }
+
+            .two-column .figure {
+                max-width: 100%;
+            }
+        }
+
         @media print {
             body {
                 padding: 15mm;
